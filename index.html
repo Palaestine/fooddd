@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  
+
+    <!--  css   -->
+    <link rel="stylesheet" href="./css/c.css">
+    <!--  fontawsom -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!--  bootstrap  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+</head>
+
+<body class="body">
+<!-- 
+    <div class="loader vh-100  position-fixed align-items-center justify-content-center">
+        <img src="./images/loader.gif" alt="">
+    </div> -->
+
+    <div class="search__page position-fixed vh-100  d-flex align-items-center justify-content-center">
+        <i class="fas fa-times search__close position-absolute"></i>
+
+        <div class="input position-relative">
+
+            <input type="text" placeholder="search here...">
+            <i class="fas fa-search"></i>
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <nav class=" d-flex justify-content-around align-items-center py-3 px-5">
+
+        <div class="logo d-flex align-items-center">
+            <i class="fas fa-utensils"></i>
+            <h4 class="m-0">Resto.</h4>
+        </div>
+
+        <div class="menu">
+
+            <i class=" fas fa-times position-absolute" id="close"></i> 
+
+            <ul class="menu__list d-flex m-0">
+                <a href="#home" class="nav__link">
+                    <li>Home</li>
+                </a>
+                <a href="#dished"  class="nav__link">
+                    <li>Dishes</li>
+                </a>
+                <a href="#about"  class="nav__link">
+                    <li>About</li>
+                </a>
+                <a href="#menu"  class="nav__link">
+                    <li>Menu</li>
+                </a>
+           <!--     <a href="#"  class="nav__link">
+                    <li>Review</li>
+                </a>
+            -->    
+                <a href="#order"  class="nav__link">
+                    <li>Order</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="icons d-flex">
+            <div class=" nav__logo  align-items-center justify-content-center" id="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="nav__logo  align-items-center justify-content-center" id="search__icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="nav__logo  align-items-center justify-content-center">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="nav__logo  align-items-center justify-content-center">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div id="carouselExampleIndicators" class="carousel slide m-auto position-relative" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="slide__cont">
+                        <div class="row pt-5  vh-100  align-items-center ">
+                            <div class="col-xl-6 col-md-6">
+                            
+                                <div class="cont">
+                                    <h3>Our Special Dish</h3>
+                                    <h1 class="mb-4">Spicy Noodles</h1>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error iure a dolore ducimus
+                                        distinctio veniam suscipit nemo alias earum illo.</p>
+                                    <a href="#" class="btn">Order Now </a>
+                                </div>
+        
+                            </div>
+
+                            <div class="col-xl-6 col-md-6">
+                                    <img src="./images/home-img-1.png" class="d-block  " alt="...">
+        
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide__cont">
+                        <div class="row pt-5  vh-100  align-items-center">
+                            <div class="col-xl-6 col-md-6">
+                            
+                                <div class="cont">
+                                    <h3>Our Special Dish</h3>
+                                    <h1 class="mb-4">Spicy Noodles</h1>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error iure a dolore ducimus
+                                        distinctio veniam suscipit nemo alias earum illo.</p>
+                                    <a href="#" class="btn">Order Now </a>
+                                </div>
+        
+                            </div>
+
+                            <div class="col-xl-6 col-md-6">
+                                    <img src="./images/home-img-2.png" class="d-block  " alt="...">
+        
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide__cont">
+                        <div class="row pt-5  vh-100  align-items-center">
+                            <div class="col-xl-6 col-md-6">
+                            
+                                <div class="cont">
+                                    <h3>Our Special Dish</h3>
+                                    <h1 class="mb-4">Spicy Noodles</h1>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error iure a dolore ducimus
+                                        distinctio veniam suscipit nemo alias earum illo.</p>
+                                    <a href="#" class="btn">Order Now </a>
+                                </div>
+        
+                            </div>
+
+                            <div class="col-xl-6 col-md-6">
+                                    <img src="./images/home-img-3.png" class="d-block  " alt="...">
+        
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
+                data-slide="prev">
+                
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"
+                data-slide="next">
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+
+
+    </section>
+
+    <section id="dished" class="py-5 my-5">
+        <div class="container">
+            <div class="title text-center mb-4">
+                <span>Our Dishes</span>
+                <h2>POPULAR DISHES</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-xl-4">
+                    <div class="dish__card text-center py-4 position-relative">
+
+                        <div class="heart position-absolute d-flex justify-content-center align-items-center">
+                            <i class="fas fa-heart"></i>
+                        </div>
+
+                        <div class="see position-absolute d-flex align-items-center justify-content-center">
+                            <i class="fas fa-eye"></i>
+                        </div>
+
+                        <img src="./images/dish-1.png" alt="">
+
+                        <div class="dish__card__info">
+                            <h3>Tasty Food</h3>
+
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+
+                            <div class="sale d-flex justify-content-center">
+                                <span>$15.99</span>
+                                <a href="#">Add To Cart</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="dish__card text-center py-4 position-relative">
+
+                        <div class="heart position-absolute d-flex justify-content-center align-items-center">
+                            <i class="fas fa-heart"></i>
+                        </div>
+
+                        <div class="see position-absolute d-flex align-items-center justify-content-center">
+                            <i class="fas fa-eye"></i>
+                        </div>
+
+                        <img src="./images/dish-2.png" alt="">
+
+                        <div class="dish__card__info">
+                            <h3>Tasty Food</h3>
+
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+
+                            <div class="sale d-flex justify-content-center">
+                                <span>$15.99</span>
+                                <a href="#">Add To Cart</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="dish__card text-center py-4 position-relative">
+
+                        <div class="heart position-absolute d-flex justify-content-center align-items-center">
+                            <i class="fas fa-heart"></i>
+                        </div>
+
+                        <div class="see position-absolute d-flex align-items-center justify-content-center">
+                            <i class="fas fa-eye"></i>
+                        </div>
+
+                        <img src="./images/dish-3.png" alt="">
+
+                        <div class="dish__card__info">
+                            <h3>Tasty Food</h3>
+
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+
+                            <div class="sale d-flex justify-content-center">
+                                <span>$15.99</span>
+                                <a href="#">Add To Cart</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="dish__card text-center py-4 position-relative">
+
+                        <div class="heart position-absolute d-flex justify-content-center align-items-center">
+                            <i class="fas fa-heart"></i>
+                        </div>
+
+                        <div class="see position-absolute d-flex align-items-center justify-content-center">
+                            <i class="fas fa-eye"></i>
+                        </div>
+
+                        <img src="./images/dish-4.png" alt="">
+
+                        <div class="dish__card__info">
+                            <h3>Tasty Food</h3>
+
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+
+                            <div class="sale d-flex justify-content-center">
+                                <span>$15.99</span>
+                                <a href="#">Add To Cart</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="dish__card text-center py-4 position-relative">
+
+                        <div class="heart position-absolute d-flex justify-content-center align-items-center">
+                            <i class="fas fa-heart"></i>
+                        </div>
+
+                        <div class="see position-absolute d-flex align-items-center justify-content-center">
+                            <i class="fas fa-eye"></i>
+                        </div>
+
+                        <img src="./images/dish-5.png" alt="">
+
+                        <div class="dish__card__info">
+                            <h3>Tasty Food</h3>
+
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+
+                            <div class="sale d-flex justify-content-center">
+                                <span>$15.99</span>
+                                <a href="#">Add To Cart</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="dish__card text-center py-4 position-relative">
+
+                        <div class="heart position-absolute d-flex justify-content-center align-items-center">
+                            <i class="fas fa-heart"></i>
+                        </div>
+
+                        <div class="see position-absolute d-flex align-items-center justify-content-center">
+                            <i class="fas fa-eye"></i>
+                        </div>
+
+                        <img src="./images/dish-6.png" alt="">
+
+                        <div class="dish__card__info">
+                            <h3>Tasty Food</h3>
+
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+
+                            <div class="sale d-flex justify-content-center">
+                                <span>$15.99</span>
+                                <a href="#">Add To Cart</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+               
+               
+                
+                
+               
+            </div>
+        </div>
+      
+    </section>
+
+    <section id="about" class="py-5 my-5">
+        <div class="container">
+            <div class="title text-center mb-4">
+                <span>About Us</span>
+                <h2>WHY CHOOSE US?</h2>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-12 col-xl-6 p-0">
+                    <div class="about__img ">
+                        <img src="./images/about-img.png" alt="" class="w-100">
+                    </div>
+                </div>
+                <div class="col-md-12 col-xl-6 d-flex align-items-center">
+                    <div class="about__cont">
+                        <h3>Best Food In The Country</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit temporibus repudiandae, molestias distinctio quis facere deleniti ea aspernatur hic alias delectus nihil voluptas aliquid itaque cumque, deserunt fugit in, omnis amet debitis doloribus perferendis doloremque. Dolor assumenda eum aliquam alias.
+
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ducimus molestiae animi a quo, itaque aliquid ipsum aut repudiandae minus quidem reprehenderit neque pariatur! Voluptas.
+
+                        </p>
+                        <div class="btns mt-3">
+                            <a href="#"><i class="fas fa-truck mr-2"></i>Free Delivery</a>
+                            <a href="#"><i class="fas fa-dollar-sign mr-2"></i>Easy Payments</a>
+                            <a href="#"><i class="fas fa-headset mr-2"></i>24/7 Service</a>
+                        </div>
+
+                        <a href="#" class="bttn mt-3">Learn More</a>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="menu" class="py-5 my-5">
+        <div class="container">
+            <div class="title text-center mb-4">
+                <span>Our Menu</span>
+                <h2>TODAY'S SPECIALLY</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-xl-4">
+                    <div class="menu__card p-3 position-relative">
+                        <div class="heartt position-absolute d-flex justify-content-center align-items-center">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <img src="./images/menu-1.jpg" alt="" class="w-100 mb-2">
+
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+
+                        <h2>Delicious Food</h2>
+
+                        <p>Lorem ipsuos vero tenetur ipsum quis? Molestiae, perferendis quas!
+
+                        </p>
+
+                        <div class="sale">
+                            <a href="#">Add To Cart</a>
+                            <span class="ml-2">$12.99</span>
+                           
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="menu__card p-3 position-relative">
+                        <div class="heartt position-absolute d-flex justify-content-center align-items-center">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <img src="./images/menu-2.jpg" alt="" class="w-100 second mb-2">
+
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+
+                        <h2>Delicious Food</h2>
+
+                        <p>Lorem ipsuos vero tenetur ipsum quis? Molestiae, perferendis quas!
+
+                        </p>
+
+                        <div class="sale">
+                            <a href="#">Add To Cart</a>
+                            <span class="ml-2">$12.99</span>
+                           
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="menu__card p-3 position-relative">
+                        <div class="heartt position-absolute d-flex justify-content-center align-items-center">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <img src="./images/menu-3.jpg" alt="" class="w-100 mb-2">
+
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+
+                        <h2>Delicious Food</h2>
+
+                        <p>Lorem ipsuos vero tenetur ipsum quis? Molestiae, perferendis quas!
+
+                        </p>
+
+                        <div class="sale">
+                            <a href="#">Add To Cart</a>
+                            <span class="ml-2">$12.99</span>
+                           
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="menu__card p-3 position-relative">
+                        <div class="heartt position-absolute d-flex justify-content-center align-items-center">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <img src="./images/menu-4.jpg" alt="" class="w-100 mb-2">
+
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+
+                        <h2>Delicious Food</h2>
+
+                        <p>Lorem ipsuos vero tenetur ipsum quis? Molestiae, perferendis quas!
+
+                        </p>
+
+                        <div class="sale">
+                            <a href="#">Add To Cart</a>
+                            <span class="ml-2">$12.99</span>
+                           
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="menu__card p-3 position-relative">
+                        <div class="heartt position-absolute d-flex justify-content-center align-items-center">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <img src="./images/menu-5.jpg" alt="" class="w-100 mb-2">
+
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+
+                        <h2>Delicious Food</h2>
+
+                        <p>Lorem ipsuos vero tenetur ipsum quis? Molestiae, perferendis quas!
+
+                        </p>
+
+                        <div class="sale">
+                            <a href="#">Add To Cart</a>
+                            <span class="ml-2">$12.99</span>
+                           
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="menu__card p-3 position-relative">
+                        <div class="heartt position-absolute d-flex justify-content-center align-items-center">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <img src="./images/menu-6.jpg" alt="" class="w-100 mb-2">
+
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+
+                        <h2>Delicious Food</h2>
+
+                        <p>Lorem ipsuos vero tenetur ipsum quis? Molestiae, perferendis quas!
+
+                        </p>
+
+                        <div class="sale">
+                            <a href="#">Add To Cart</a>
+                            <span class="ml-2">$12.99</span>
+                           
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="menu__card p-3 position-relative">
+                        <div class="heartt position-absolute d-flex justify-content-center align-items-center">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <img src="./images/menu-7.jpg" alt="" class="w-100 mb-2">
+
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+
+                        <h2>Delicious Food</h2>
+
+                        <p>Lorem ipsuos vero tenetur ipsum quis? Molestiae, perferendis quas!
+
+                        </p>
+
+                        <div class="sale">
+                            <a href="#">Add To Cart</a>
+                            <span class="ml-2">$12.99</span>
+                           
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="menu__card p-3 position-relative">
+                        <div class="heartt position-absolute d-flex justify-content-center align-items-center">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <img src="./images/menu-8.jpg" alt="" class="w-100 mb-2">
+
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+
+                        <h2>Delicious Food</h2>
+
+                        <p>Lorem ipsuos vero tenetur ipsum quis? Molestiae, perferendis quas!
+
+                        </p>
+
+                        <div class="sale">
+                            <a href="#">Add To Cart</a>
+                            <span class="ml-2">$12.99</span>
+                           
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="menu__card p-3 position-relative">
+                        <div class="heartt position-absolute d-flex justify-content-center align-items-center">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <img src="./images/menu-9.jpg" alt="" class="w-100 mb-2">
+
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+
+                        <h2>Delicious Food</h2>
+
+                        <p>Lorem ipsuos vero tenetur ipsum quis? Molestiae, perferendis quas!
+
+                        </p>
+
+                        <div class="sale">
+                            <a href="#">Add To Cart</a>
+                            <span class="ml-2">$12.99</span>
+                           
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="order" class="py-5 my-5">
+        <div class="container">
+            <div class="title text-center mb-4">
+                <span>Order Now</span>
+                <h2>FREE AND FAST</h2>
+            </div>
+
+
+            <div class="order__card p-3">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="form__box mb-3">
+                            <label for="">Your Name</label>
+                            <input type="text" class="form-control" placeholder="enter your name">
+                        </div>
+                        <div class="form__box mb-3">
+                            <label for="">Your Order</label>
+                            <input type="text" class="form-control" placeholder="enter food name">
+                        </div>
+                        <div class="form__box mb-3">
+                            <label for="">How Much</label>
+                            <input type="text" class="form-control" placeholder="how many orders">
+                        </div>
+                        <div class="form__box mb-3">
+                            <label for="">Your Address</label>
+                            <textarea type="text" class="form-control" placeholder="enter your adderss" rows="8"></textarea>
+                        </div>
+
+                       
+                    </div>
+
+
+
+
+                    <div class="col-md-6">
+                        <div class="form__box mb-3">
+                            <label for="">Your Number</label>
+                            <input type="number" class="form-control" placeholder="enter your number">
+                        </div>
+                        <div class="form__box mb-3">
+                            <label for="">Additional Food</label>
+                            <input type="text" class="form-control" placeholder="extra with food ">
+                        </div>
+                        <div class="form__box mb-3">
+                            <label for="">Date And Time </label>
+                            <input type="datetime-local"  class="form-control">
+                        </div>
+                        <div class="form__box mb-3">
+                            <label for="">Your Message</label>
+                            <textarea type="text" class="form-control" placeholder="enter your message" rows="8"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="#">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/j.js"></script>
+</body>
+
+</html>
